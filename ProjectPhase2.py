@@ -9,7 +9,7 @@ def GetDatesWorked():
     #Prompt the user for the dates in the following format: mm/dd/yyy
     #no validation are needed for this input, we will assume the dates are entered correctly
     fromdate = input("Enter Start Date (mm/dd/yyy): ")
-    todate = inpute("Enter End Date (mm/dd/yyy): ")
+    todate = input("Enter End Date (mm/dd/yyy): ")
     return fromdate, todate
 
 def GetHoursWorked():
@@ -106,3 +106,21 @@ if __name__ == "__main__":
         #printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
 
         #write code to insert fromdate, todate, empname, hours, hourlyrate, and taxrate into list EmpDetail
+        fromdate = EmpDetail[0]
+        todate = EmpDetail[1]
+        empname = EmpDetail[2]
+        hours = EmpDetail[3]
+        hourlyrate = EmpDetail[4]
+        taxrate = EmpDetail[5]
+
+        #The following code appends the list EmpDetail to the list EmpDetailList
+        EmpDetailList.append(EmpDetail)
+
+        # COMMENT OUT THE FOLLOWING CODE
+        #TotEmplyess += 1
+        #TotHours += hours
+        #TotGrossPay += grosspay
+        #TotTax += incometax
+        #TotNetPay += netpay
+    printinfo(EmpDetailList)
+    PrintTotals(EmpTotals)
