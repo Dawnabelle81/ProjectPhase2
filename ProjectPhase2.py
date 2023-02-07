@@ -106,12 +106,12 @@ if __name__ == "__main__":
         #printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
 
         #write code to insert fromdate, todate, empname, hours, hourlyrate, and taxrate into list EmpDetail
-        fromdate = EmpDetail[0]
-        todate = EmpDetail[1]
-        empname = EmpDetail[2]
-        hours = EmpDetail[3]
-        hourlyrate = EmpDetail[4]
-        taxrate = EmpDetail[5]
+        EmpDetail.insert(0,fromdate)
+        EmpDetail.insert(1,todate)
+        EmpDetail.insert(2,empname)
+        EmpDetail.insert(3,hours)
+        EmpDetail.insert(4,hourlyrate)
+        EmpDetail.insert(5,taxrate)
 
         #The following code appends the list EmpDetail to the list EmpDetailList
         EmpDetailList.append(EmpDetail)
