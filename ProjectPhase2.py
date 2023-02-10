@@ -49,7 +49,7 @@ def printinfo(EmpDetailList):
 
         grosspay, incometax, netpay = CalcTaxAndNetPay(hours, hourlyrate, taxrate)
         print(fromdate, todate, empname, f"{hours:,.2f}", f"{hourlyrate:,.2f}", f"{grosspay:,.2f}", f"{taxrate:,.1%}", f"{incometax:,.2f}", f"{netpay:,.2f}")
-        TotEmplyess += 1
+        TotEmployees += 1
         TotHours += hours
         TotGrossPay += grosspay
         TotTax += incometax
@@ -107,14 +107,7 @@ if __name__ == "__main__":
         #printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
 
         #write code to insert fromdate, todate, empname, hours, hourlyrate, and taxrate into list EmpDetail
-    for EmpDetail in EmpDetailList:
-        fromdate = EmpDetail[0]
-        todate = EmpDetail[1]
-        empname = EmpDetail[2]
-        hours = EmpDetail[3]
-        hourlyrate = EmpDetail[4]
-        taxrate = EmpDetail[5]
-        
+          
         EmpDetail = [fromdate, todate, empname, hours, hourlyrate, taxrate]
 
         #The following code appends the list EmpDetail to the list EmpDetailList
